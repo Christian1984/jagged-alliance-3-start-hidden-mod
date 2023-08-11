@@ -1,6 +1,6 @@
 return PlaceObj('ModDef', {
 	'title', "Start Hidden Mod",
-	'description', "Start with all squad member hidden after when entering a map.\n\nLicense: MIT\nSource Code: https://github.com/Christian1984/jagged-alliance-3-start-hidden-mod",
+	'description', "Start with all squad member hidden when entering a map.\n\nLicense: MIT\nSource Code: https://github.com/Christian1984/jagged-alliance-3-start-hidden-mod",
 	'image', "Images/modicon.png",
 	'last_changes', "Initial Release",
 	'id', "StartHiddenMod",
