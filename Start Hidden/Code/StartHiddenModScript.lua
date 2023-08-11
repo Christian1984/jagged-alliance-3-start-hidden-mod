@@ -20,29 +20,31 @@ OnMsg.ExplorationStart = function()
 
     -- check if enemies are in sector
     local isConflict = IsConflictMode(gv_CurrentSectorId)
-    -- print("IsConflictMode", IsConflictMode)
     print("isConflict", isConflict)
 
-    -- get all player mercs
-    for _, squad in ipairs(g_PlayerSquads) do
+    if isConflict then
+        -- get all player mercs
+        local mercsInSector = GetPlayerMercsInSector(gv_CurrentSectorId)
+        print("#mercsInSector", #mercsInSector)
 
-        if squad.CurrentSector == gv_CurrentSectorId then
-            for _, merc in pairs(squad.units) do
-                local unit = g_Units[merc]
+        -- call Hide() on all player mercs
+        for _, merc in ipairs(mercsInSector) do
+            print("------------------------")
+            print("merc", merc)
 
-                if unit then
-                    print("unit", unit)
-                    -- print("unit.Hide", unit.Hide)
-                    -- print("unit:Hide", unit:Hide)
-
-                    -- unit.Hide()
-                end
+            local unit = gv_UnitData[merc]
+            if unit then
+                print("unit", unit)
+                print("here1")
+                local isDowned = unit:IsDowned() -- <- this function can be called
+                print("here2")
+                print("unit:IsDowned()", isDowned)
+                print("here3")
+                unit:Hide() -- <- this function cannot be called
+                print("??? execution never gets here")
             end
-        else
-            print("squad skipped, not in sector")
         end
     end
-
 
     log("ExplorationStart done!")
 end
