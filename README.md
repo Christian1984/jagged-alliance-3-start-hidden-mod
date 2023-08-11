@@ -1,5 +1,5 @@
 Start with all squad member hidden when entering a map.
 
-<!--
-![Max Zoom](Better%20Zoom%20Mod/Images/better-zoom-mod-screenshot-2.png)
--->
+![Sitting Ducks](Start%20Hidden%20Mod/Images/start-hidden-mod-screenshot-1.png)
+![Hidden Pros](Start%20Hidden%20Mod/Images/start-hidden-mod-screenshot-1.png)
+

@@ -16,4 +16,6 @@ return PlaceObj('ModDef', {
 	'has_options', true,
 	'saved', 1690652575,
 	'code_hash', -4373319759099573401,
+	'screenshot1', "Images/start-hidden-mod-screenshot-1.png",
+	'screenshot2', "Images/start-hidden-mod-screenshot-2.png",
 })
